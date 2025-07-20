@@ -1,0 +1,49 @@
+<html>
+<body>
+<h1>ISO/OSI vs TCP/IP</h1>
+<p>Quando usiamo internet avvengono molti passaggi complessi, per organizzare meglio tutti questi passaggi a noi “invisibili” vengono usati 2 principali modelli che dividono la rete in livelli. </p>
+<p>Questi modelli sono : </p>
+<ul>
+<li>Modello ISO/OSI</li>
+<li>Modello TCP/IP . </li>
+</ul>
+<p>Adesso che abbiamo capito a cosa servono possiamo capire come funzionano e quali sono i livelli dei due modelli piu’ importanti che abbiamo per classificare le reti . </p>
+<p></p>
+<h2>ISO/OSI </h2>
+<ul>
+<li>Applicazione </li>
+<li>Presentazione </li>
+<li>Sessione </li>
+<li>Trasporto </li>
+<li>Rete </li>
+<li>Collegamento dati </li>
+<li>Fisico </li>
+</ul>
+<p>Per farci comprendere come fuco ciascun livello :</p>
+<ul>
+<li>Applicazione : e’ il livello che mostra all‘ utente l’ interfaccia finale es: l’ interfaccia di un sito.</li>
+<li>Presentazione: ha il conziona la rete e’ stato creato un modello teorico il modello ISO/OSI che  divide la rete in 7 livelli , ogni livello comunica solo con quelli che gli sono vicini (per esempio il livello della sessione puo’ comunicare solo con la presentazione e il trasporto).</p>
+<p>Adesso analizziamo nello specifimpito di tradurre le informazioni che vengono dal livello della sessione nel formato dell’applicazione e viceversa. Un altro compito per questo livello e’ quello della compressione e la crittografia dei dati. </li>
+<li>Sessione : ha il compito di gestire le connessioni tra le applicazioni. In caso di interruzione della connessione essa e’ riavviata nuovamente. Gestisce anche la direzione della connessione e si assicura dell’avvenimento di una connessione prima di avviarne un altra. </li>
+<li>Trasporto :Invia i dati attraverso un canale creato dal livello di sessione. I dati vengono suddivisi in segmenti, che vengono inviati uno dopo l'altro alla stazione di destinazione.
+In caso di perdita o danneggiamento di un segmento, è possibile richiederne la ritrasmissione; la stazione di destinazione può anche inviare una conferma di ricezione del segmento.</li>
+<li>Rete : È l’unico livello con conoscenza della topologia fisica della rete.
+Determina il percorso migliore per i dati (routing), utilizzando indirizzi logici (es. IP).
+L’unità di dati di questo livello è il pacchetto.</li>
+<li>Collegamento dati : Controlla la trasmissione dei bit attraverso la rete fisica.
+Riduce gli errori e garantisce la consegna corretta dei frame sulla base degli indirizzi MAC.
+Si divide in due sottolivelli:<ul>
+<li>LLC (Logical Link Control): controlla la correttezza della trasmissione.</li>
+<li>MAC (Media Access Control): gestisce l’accesso al mezzo fisico (es. Wi-Fi, cavo).</li>
+</ul></li>
+<li>Fisica: Si occupa dell’invio effettivo dei bit tramite mezzi fisici (cavi, onde radio, fibra ottica).
+Non controlla gli errori, ma definisce i segnali, le frequenze, i connettori, e le distanze.</li>
+</ul>
+<p></p>
+<p>Enkapsulazione: è il processo con cui ogni livello aggiunge un’intestazione (header) ai dati prima di passarli al livello inferiore.</p>
+<p>
+Dekapsulazione: è il processo inverso, che avviene alla ricezione dei dati, rimuovendo i vari header strato per strato.
+
+</p>
+</body>
+</html>
